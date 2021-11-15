@@ -1,0 +1,10 @@
+Linux密码和密码管理工具seahorse
+
+http://www.luoshuizhibin.cn/884.html
+
+
+终端下输入命令：seahorse
+在登录项内，将相应的凭证信息删除即可
+
+
+
