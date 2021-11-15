@@ -1,6 +1,4 @@
-
-
-ÏÈ²é¿´ÏµÍ³·şÎñ£¬VMWareµÄDHCP·şÎñ¿ÉÄÜ±»¹ØµôÁË£¬ÒªÆô¶¯ÏÂ¡£
+å…ˆæŸ¥çœ‹ç³»ç»ŸæœåŠ¡ï¼ŒVMWareçš„DHCPæœåŠ¡å¯èƒ½è¢«å…³æ‰äº†ï¼Œè¦å¯åŠ¨ä¸‹ã€‚
 
 $ sudo ip link set enp0s3 down
 $ sudo ip link set enp0s3 up

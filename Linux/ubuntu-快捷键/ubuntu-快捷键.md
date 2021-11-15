@@ -12,4 +12,4 @@ Ctrl + Alt + PrtSc – 获取当前窗口的 截图并存放到剪贴板。
 ```
 
 ## Other
-![Image Missing](ubuntu-快捷键/Ubuntu快捷键.JPG "Ubuntu快捷键")
+![Image Missing](Ubuntu快捷键.JPG "Ubuntu快捷键")
