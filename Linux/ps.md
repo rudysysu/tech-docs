@@ -1,3 +1,11 @@
+# Example
+
+## 获取pid
+- javaPid=`ps --no-heading -C java -f | grep "/${MY_PROJECT_NAME}/" |awk '{print $2}'`
+    - -C: Select by command name.
+    - -f: Do full-format listing.
+    - --no-heading: Print no header line at all.
+
 # SIMPLE PROCESS SELECTION
 
 ~~~
