@@ -20,4 +20,7 @@ git branch --set-upstream-to=<remote>/<branch> <local-branch>
 git remote -v
 git remote add xxxx https://xxxx.git
 git remote remove xxxx
+
+# 初始化仓库
+git init --bare
 ```
