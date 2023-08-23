@@ -11,6 +11,7 @@ git fetch xxxx
 git add .
 git commit -m 'xxx'
 git push
+git push --set-upstream origin master
 
 # 设置upstream
 git branch -vv <branch-name> // 如果分支已配置了upstream，它将显示在输出的方括号中，如：* master 65bcbad [origin/master] update
