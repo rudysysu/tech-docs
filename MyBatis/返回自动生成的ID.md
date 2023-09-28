@@ -1,0 +1,1 @@
+@Options(useGeneratedKeys=true, keyProperty="id", keyColumn="id")
