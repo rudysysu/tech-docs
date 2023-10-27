@@ -20,8 +20,9 @@ binlog_format=row
 
 ## docker run
 ```
+docker pull mysql:5.7.36
 docker run -d --name mysql -p 3306:3306 -v /data/mysql/conf:/etc/mysql/conf.d -v /data/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root mysql:5.7.36
-docker exec -it mysql mysql -uroot -p
+docker exec -it mysql mysql
 grant all on *.* to 'root'@'%' identified by 'root';
 ```
 
