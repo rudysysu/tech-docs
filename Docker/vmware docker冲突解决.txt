@@ -1,0 +1,5 @@
+一条命令搞定(这样可以使用vmware)：
+bcdedit /set hypervisorlaunchtype off
+
+如果想重新开启(这样可以使用docker)：
+bcdedit /set hypervisorlaunchtype auto

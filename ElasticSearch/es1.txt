@@ -1,0 +1,110 @@
+docker pull docker.elastic.co/elasticsearch/elasticsearch:8.5.3
+docker pull docker.elastic.co/kibana/kibana:8.5.3
+docker pull docker.elastic.co/logstash/logstash:8.5.3
+
+docker run --name kib-01 --net elastic -p 5601:5601 docker.elastic.co/kibana/kibana:8.5.3
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Elasticsearch security features have been automatically configured!
+✅ Authentication is enabled and cluster connections are encrypted.
+
+ℹ️  Password for the elastic user (reset with `bin/elasticsearch-reset-password -u elastic`):
+  jHIAlHyXuZ+q-cFof2oI
+
+ℹ️  HTTP CA certificate SHA-256 fingerprint:
+  90130023a88e8b23dd83f6891e37f71c2636bd9608d6f52d21e0534fe36df961
+
+ℹ️  Configure Kibana to use this cluster:
+• Run Kibana and click the configuration link in the terminal when Kibana starts.
+• Copy the following enrollment token and paste it into Kibana in your browser (valid for the next 30 minutes):
+  eyJ2ZXIiOiI4LjUuMyIsImFkciI6WyIxNzIuMTguMC4yOjkyMDAiXSwiZmdyIjoiOTAxMzAwMjNhODhlOGIyM2RkODNmNjg5MWUzN2Y3MWMyNjM2YmQ5NjA4ZDZmNTJkMjFlMDUzNGZlMzZkZjk2MSIsImtleSI6Ii1jSGJFSVVCTVZRUHR3ZlNxRVRsOmxJTHUzT091UUdDcE5faGgxSGhiMHcifQ==
+
+ℹ️ Configure other nodes to join this cluster:
+• Copy the following enrollment token and start new Elasticsearch nodes with `bin/elasticsearch --enrollment-token <token>` (valid for the next 30 minutes):
+  eyJ2ZXIiOiI4LjUuMyIsImFkciI6WyIxNzIuMTguMC4yOjkyMDAiXSwiZmdyIjoiOTAxMzAwMjNhODhlOGIyM2RkODNmNjg5MWUzN2Y3MWMyNjM2YmQ5NjA4ZDZmNTJkMjFlMDUzNGZlMzZkZjk2MSIsImtleSI6Ii1NSGJFSVVCTVZRUHR3ZlNxRVRsOjVuODRqUi1MU05xT1N0ck9Jd1p3X0EifQ==
+
+  If you're running in Docker, copy the enrollment token and run:
+  `docker run -e "ENROLLMENT_TOKEN=<token>" docker.elastic.co/elasticsearch/elasticsearch:8.5.3`
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+https://172.29.142.59:9200/
+http://172.29.142.59:5601/?code=079982
+
+
+docker cp es01:/usr/share/elasticsearch/config/certs/http_ca.crt d:/data/logstash/config/
+
+docker run --rm -it docker.elastic.co/logstash/logstash:8.5.3
+docker cp pensive_chandrasekhar:/usr/share/logstash/config d:/data/logstash/config
+docker cp pensive_chandrasekhar:/usr/share/logstash/pipeline d:/data/logstash/pipeline
+
+docker run -d --name logstash01 --net elastic -p 5044:5044 -p 9600:9600 -v d:/data/logstash/config:/usr/share/logstash/config -v d:/data/logstash/pipeline:/usr/share/logstash/pipeline -v d:/data/weblog/business:/data/weblog/business docker.elastic.co/logstash/logstash:8.5.3
+
+#### logstash.yml
+```
+http.host: "0.0.0.0"
+xpack.monitoring.enabled: false
+xpack.monitoring.elasticsearch.hosts: [ "https://l:9200" ]
+xpack.monitoring.elasticsearch.ssl.certificate_authority: /usr/share/logstash/config/http_ca.crt
+```
+
+#### logstash.conf
+```
+input {
+  stdin {}
+}
+
+output {
+  stdout {
+    codec => json_lines
+  }
+  elasticsearch {
+    hosts => ["https://172.18.0.2:9200"]
+    user => "elastic"
+    password => "jHIAlHyXuZ+q-cFof2oI"
+    ssl => true
+    cacert => "/usr/share/logstash/config/http_ca.crt"
+    index => "logstash-%{+YYYY.MM.dd}"
+  }
+}
+```
+
+#### springboot-zero.conf
+存在一个问题，如果rotation了，日志就不会采集了
+```
+input {
+  file {
+    type => "log"
+    path => ["/data/weblog/business/springboot-zero/debug.log"]
+  }
+}
+
+output {
+  stdout {
+    codec => json_lines
+  }
+  elasticsearch {
+    hosts => ["https://172.18.0.2:9200"]
+    user => "elastic"
+    password => "jHIAlHyXuZ+q-cFof2oI"
+    ssl => true
+    cacert => "/usr/share/logstash/config/http_ca.crt"
+    index => "springboot-zero-%{+YYYY.MM.dd}"
+  }
+}
+```
+
+#### filebeaat
+
+
+
+cd /
+"C:\Program Files\Elastic\Beats\8.5.3\filebeat\filebeat.exe" -c D:\data\filebeat\filebeat.yml
+pause
+
+#### 参考文献
+- https://github.com/aneasystone/weekly-practice/blob/main/notes/week015-elk-in-action/README.md
+- https://www.javainuse.com/spring/springboot-microservice-elks
+- https://juejin.cn/post/6993934038352265224
