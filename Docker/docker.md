@@ -11,3 +11,15 @@ mklink /J C:\Users\Rudy\AppData\Local\Docker\wsl\data D:\data\docker
 ## Test Docker
 - docker run hello-world
 
+## 开启2375端口
+```
+# vim /usr/lib/systemd/system/docker.service
+[Service]
+# ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock -H tcp://0.0.0.0:2375
+
+# systemctl daemon-reload
+# systemctl restart docker
+
+# curl http://localhost:2375/version
+```
