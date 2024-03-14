@@ -9,6 +9,5 @@ TransactionSynchronizationManager.registerSynchronization(new TransactionSynchro
     @Override
     public void afterCommit() {
         log.info("事务提交结束");
-        orderService.addOrder();
     }
 });
