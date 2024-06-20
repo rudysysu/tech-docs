@@ -9,6 +9,8 @@ mvn clean source:jar package -DskipTests             | 清除 & 打包源码 & �
 mvn assembly:assembly                                | 打包并装配资源，生成可执行jar
 mvn dependency:resolve -Dclassifier=sources          | Download source code
 mvn dependency:resolve -Dclassifier=javadoc          | Download javadoc
+mvn dependency:list                                  | 打印最终依赖列表
+mvn dependency:tree                                  | 打印依赖树
 
 ## 常用参数
 
