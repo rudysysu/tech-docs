@@ -1,0 +1,11 @@
+# VPN
+- https://www.nthu.cc/ // 还没有试过，貌似性价比可以
+- Karing： // 实测IOS可以免费使用
+  - https://www.youtube.com/watch?v=7I4vv16rCh4
+    - https://kjgx668.blogspot.com/2024/08/2024vpnkaring-windowsios.html
+      - https://www.cloudflare-cn.com/
+      - https://github.com/bia-pain-bache/BPB-Worker-Panel
+      - https://www.nslookup.io/domains/cdn-all.xn--b6gac.eu.org/dns-records/
+      - https://1024tools.com/uuid/
+      - https://vfarid.github.io/cf-ip-scanner/
+- 1.1.1.1 // 国内已废
