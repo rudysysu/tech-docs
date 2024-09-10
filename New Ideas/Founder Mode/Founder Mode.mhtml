@@ -1,0 +1,321 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://paulgraham.com/foundermode.html
+Subject: Founder Mode
+Date: Tue, 10 Sep 2024 17:59:22 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--A7Rel9IMe9uAj5VESHDBkQ64DkCzhuGOmjxNCpsJWq----"
+
+
+------MultipartBoundary--A7Rel9IMe9uAj5VESHDBkQ64DkCzhuGOmjxNCpsJWq----
+Content-Type: text/html
+Content-ID: <frame-F28B4FE3CA52164EECFED264204C0C17@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://paulgraham.com/foundermode.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dwindows-1252"><meta name=3D"Keywords" content=3D""><title>Founder Mode</=
+title><!-- <META NAME=3D"ROBOTS" CONTENT=3D"NOODP"> -->
+<link rel=3D"shortcut icon" href=3D"http://ycombinator.com/arc/arc.png">
+</head><body bgcolor=3D"#ffffff" background=3D"https://s.turbifycdn.com/aah=
+/paulgraham/bel-6.gif" text=3D"#000000" link=3D"#000099" vlink=3D"#464646">=
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr valign=
+=3D"top"><td><map name=3D"1806066d4a82e49"><area shape=3D"rect" coords=3D"0=
+,0,67,21" href=3D"https://paulgraham.com/index.html"><area shape=3D"rect" c=
+oords=3D"0,21,67,42" href=3D"https://paulgraham.com/articles.html"><area sh=
+ape=3D"rect" coords=3D"0,42,67,63" href=3D"http://www.amazon.com/gp/product=
+/0596006624"><area shape=3D"rect" coords=3D"0,63,67,84" href=3D"https://pau=
+lgraham.com/books.html"><area shape=3D"rect" coords=3D"0,84,67,105" href=3D=
+"http://ycombinator.com/"><area shape=3D"rect" coords=3D"0,105,67,126" href=
+=3D"https://paulgraham.com/arc.html"><area shape=3D"rect" coords=3D"0,126,6=
+7,147" href=3D"https://paulgraham.com/bel.html"><area shape=3D"rect" coords=
+=3D"0,147,67,168" href=3D"https://paulgraham.com/lisp.html"><area shape=3D"=
+rect" coords=3D"0,168,67,189" href=3D"https://paulgraham.com/antispam.html"=
+><area shape=3D"rect" coords=3D"0,189,67,210" href=3D"https://paulgraham.co=
+m/kedrosky.html"><area shape=3D"rect" coords=3D"0,210,67,231" href=3D"https=
+://paulgraham.com/faq.html"><area shape=3D"rect" coords=3D"0,231,67,252" hr=
+ef=3D"https://paulgraham.com/raq.html"><area shape=3D"rect" coords=3D"0,252=
+,67,273" href=3D"https://paulgraham.com/quo.html"><area shape=3D"rect" coor=
+ds=3D"0,273,67,294" href=3D"https://paulgraham.com/rss.html"><area shape=3D=
+"rect" coords=3D"0,294,67,315" href=3D"https://paulgraham.com/bio.html"><ar=
+ea shape=3D"rect" coords=3D"0,315,67,336" href=3D"https://twitter.com/paulg=
+"><area shape=3D"rect" coords=3D"0,336,67,357" href=3D"https://mas.to/@paul=
+g"></map><img src=3D"https://s.turbifycdn.com/aah/paulgraham/bel-7.gif" wid=
+th=3D"69" height=3D"357" usemap=3D"#1806066d4a82e49" border=3D"0" hspace=3D=
+"0" vspace=3D"0" ismap=3D""></td><td><img src=3D"https://sep.turbifycdn.com=
+/ca/Img/trans_1x1.gif" height=3D"1" width=3D"26" border=3D"0"></td><td><a h=
+ref=3D"https://paulgraham.com/index.html"><img src=3D"https://s.turbifycdn.=
+com/aah/paulgraham/bel-8.gif" width=3D"410" height=3D"45" border=3D"0" hspa=
+ce=3D"0" vspace=3D"0"></a><br><br><table border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" width=3D"435"><tbody><tr valign=3D"top"><td width=3D"435"><i=
+mg src=3D"https://s.turbifycdn.com/aah/paulgraham/founder-mode-1.gif" width=
+=3D"118" height=3D"18" border=3D"0" hspace=3D"0" vspace=3D"0" alt=3D"Founde=
+r Mode"><br><br><font size=3D"2" face=3D"verdana">September 2024<br><br>At =
+a YC event last week Brian Chesky gave a talk that everyone who
+was there will remember. Most founders I talked to afterward said
+it was the best they'd ever heard. Ron Conway, for the first time
+in his life, forgot to take notes. I'm not going to try to reproduce
+it here. Instead I want to talk about a question it raised.<br><br>The them=
+e of Brian's talk was that the conventional wisdom about
+how to run larger companies is mistaken. As Airbnb grew, well-meaning
+people advised him that he had to run the company in a certain way
+for it to scale. Their advice could be optimistically summarized
+as "hire good people and give them room to do their jobs." He
+followed this advice and the results were disastrous. So he had to
+figure out a better way on his own, which he did partly by studying
+how Steve Jobs ran Apple. So far it seems to be working. Airbnb's
+free cash flow margin is now among the best in Silicon Valley.<br><br>The a=
+udience at this event included a lot of the most successful
+founders we've funded, and one after another said that the same
+thing had happened to them. They'd been given the same advice about
+how to run their companies as they grew, but instead of helping
+their companies, it had damaged them.<br><br>Why was everyone telling these=
+ founders the wrong thing? That was
+the big mystery to me. And after mulling it over for a bit I figured
+out the answer: what they were being told was how to run a company
+you hadn't founded =97 how to run a company if you're merely a
+professional manager. But this m.o. is so much less effective that
+to founders it feels broken. There are things founders can do that
+managers can't, and not doing them feels wrong to founders, because
+it is.<br><br>In effect there are two different ways to run a company: foun=
+der
+mode and manager mode. Till now most people even in Silicon Valley
+have implicitly assumed that scaling a startup meant switching to
+manager mode. But we can infer the existence of another mode from
+the dismay of founders who've tried it, and the success of their
+attempts to escape from it.<br><br>There are as far as I know no books spec=
+ifically about founder mode.
+Business schools don't know it exists. All we have so far are the
+experiments of individual founders who've been figuring it out for
+themselves. But now that we know what we're looking for, we can
+search for it. I hope in a few years founder mode will be as well
+understood as manager mode. We can already guess at some of the
+ways it will differ.<br><br>The way managers are taught to run companies se=
+ems to be like modular
+design in the sense that you treat subtrees of the org chart as
+black boxes. You tell your direct reports what to do, and it's up
+to them to figure out how. But you don't get involved in the details
+of what they do. That would be micromanaging them, which is bad.<br><br>Hir=
+e good people and give them room to do their jobs. Sounds great
+when it's described that way, doesn't it? Except in practice, judging
+from the report of founder after founder, what this often turns out
+to mean is: hire professional fakers and let them drive the company
+into the ground.<br><br>One theme I noticed both in Brian's talk and when t=
+alking to founders
+afterward was the idea of being gaslit. Founders feel like they're
+being gaslit from both sides =97 by the people telling them they
+have to run their companies like managers, and by the people working
+for them when they do. Usually when everyone around you disagrees
+with you, your default assumption should be that you're mistaken.
+But this is one of the rare exceptions. VCs who haven't been founders
+themselves don't know how founders should run companies, and C-level
+execs, as a class, include some of the most skillful liars in the
+world.
+<font color=3D"#dddddd">[<a href=3D"https://paulgraham.com/foundermode.html=
+#f1n"><font color=3D"#dddddd">1</font></a>]</font><br><br>Whatever founder =
+mode consists of, it's pretty clear that it's going
+to break the principle that the CEO should engage with the company
+only via his or her direct reports. "Skip-level" meetings will
+become the norm instead of a practice so unusual that there's a
+name for it. And once you abandon that constraint there are a huge
+number of permutations to choose from.<br><br>For example, Steve Jobs used =
+to run an annual retreat for what he
+considered the 100 most important people at Apple, and these were
+not the 100 people highest on the org chart. Can you imagine the
+force of will it would take to do this at the average company? And
+yet imagine how useful such a thing could be. It could make a big
+company feel like a startup. Steve presumably wouldn't have kept
+having these retreats if they didn't work. But I've never heard of
+another company doing this. So is it a good idea, or a bad one? We
+still don't know. That's how little we know about founder mode.
+<font color=3D"#dddddd">[<a href=3D"https://paulgraham.com/foundermode.html=
+#f2n"><font color=3D"#dddddd">2</font></a>]</font><br><br>Obviously founder=
+s can't keep running a 2000 person company the way
+they ran it when it had 20. There's going to have to be some amount
+of delegation. Where the borders of autonomy end up, and how sharp
+they are, will probably vary from company to company. They'll even
+vary from time to time within the same company, as managers earn
+trust. So founder mode will be more complicated than manager mode.
+But it will also work better. We already know that from the examples
+of individual founders groping their way toward it.<br><br>Indeed, another =
+prediction I'll make about founder mode is that
+once we figure out what it is, we'll find that a number of individual
+founders were already most of the way there =97 except that in doing
+what they did they were regarded by many as eccentric or worse.
+<font color=3D"#dddddd">[<a href=3D"https://paulgraham.com/foundermode.html=
+#f3n"><font color=3D"#dddddd">3</font></a>]</font><br><br>Curiously enough =
+it's an encouraging thought that we still know so
+little about founder mode. Look at what founders have achieved
+already, and yet they've achieved this against a headwind of bad
+advice. Imagine what they'll do once we can tell them how to run
+their companies like Steve Jobs instead of John Sculley.<br><br><br><br><br=
+><br><br><br><br><br><b>Notes</b><br><br>[<a name=3D"f1n"><font color=3D"#0=
+00000">1</font></a>]
+The more diplomatic way of phrasing this statement would be
+to say that experienced C-level execs are often very skilled at
+managing up. And I don't think anyone with knowledge of this world
+would dispute that.<br><br>[<a name=3D"f2n"><font color=3D"#000000">2</font=
+></a>]
+If the practice of having such retreats became so widespread
+that even mature companies dominated by politics started to do it,
+we could quantify the senescence of companies by the average depth
+on the org chart of those invited.<br><br>[<a name=3D"f3n"><font color=3D"#=
+000000">3</font></a>]
+I also have another less optimistic prediction: as soon as
+the concept of founder mode becomes established, people will start
+misusing it. Founders who are unable to delegate even things they
+should will use founder mode as the excuse. Or managers who aren't
+founders will decide they should try to act like founders. That may
+even work, to some extent, but the results will be messy when it
+doesn't; the modular approach does at least limit the damage a bad
+CEO can do.<br><br><br><br><font color=3D"888888"><b>Thanks</b> to Brian Ch=
+esky, Patrick Collison,=20
+Ron Conway, Jessica
+Livingston, Elon Musk, Ryan Petersen, Harj Taggar, and Garry Tan
+for reading drafts of this.</font><br><br></font></td></tr></tbody></table>=
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"435"><tbod=
+y><tr><td><font size=3D"2" face=3D"verdana"><br><br><hr></font></td></tr></=
+tbody></table></td></tr></tbody></table>
+
+
+
+ =20
+
+
+
+ =20
+
+
+</body></html><!-- html105.prod.store.e1b.lumsb.com Tue Sep 10 01:33:37 PDT=
+ 2024 -->
+------MultipartBoundary--A7Rel9IMe9uAj5VESHDBkQ64DkCzhuGOmjxNCpsJWq----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://s.turbifycdn.com/aah/paulgraham/bel-6.gif
+
+R0lGODdh+gD6APAAAP///wAAACwAAAAA+gD6AAAC/4SPqcvtD6OctNqLs968+w+G4kiW5omm6sq2
+7gvH8kzX9o3n+s73/g8MCofEovGITCqXzKbzCY1Kp9Sq9YrNarfcrvcLDovH5LL5jE6r1+y2+w2P
+y+f0uv2Oz+v3/L7/DxgoOEhYaHiImKi4yNjo+AgZKTlJWWl5iZmpucnZ6fkJGio6SlpqeoqaqrrK
+2ur6ChsrO0tba3uLm6u7y9vr+wscLDxMXGx8jJysvMzc7PwMHS09TV1tfY2drb3N3e39DR4uPk5e
+bn6Onq6+zt7u/g4fLz9PX29/j5+vv8/f7/8PMKDAgQQLGjyIMKHChQwbOnwIMaLEiRQrWryIMaPG
+jVYcO3r8CDKkyJEkS5o8iTKlypUsW7p8CTOmzJk0a9q8iTOnzp08e/r8CTSo0KFEixo9ijSp0qVM
+mzp9CjWq1KlUq1q9ijWr1q1cu3r9Cjas2LFky14oAAA7
+
+------MultipartBoundary--A7Rel9IMe9uAj5VESHDBkQ64DkCzhuGOmjxNCpsJWq----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://s.turbifycdn.com/aah/paulgraham/bel-7.gif
+
+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
+BRhQLvOJ1XI6pqgHIRABADs=
+
+------MultipartBoundary--A7Rel9IMe9uAj5VESHDBkQ64DkCzhuGOmjxNCpsJWq----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://sep.turbifycdn.com/ca/Img/trans_1x1.gif
+
+R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------MultipartBoundary--A7Rel9IMe9uAj5VESHDBkQ64DkCzhuGOmjxNCpsJWq----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://s.turbifycdn.com/aah/paulgraham/bel-8.gif
+
+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
+SnOa1KymNa8pzQIAADs=
+
+------MultipartBoundary--A7Rel9IMe9uAj5VESHDBkQ64DkCzhuGOmjxNCpsJWq----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://s.turbifycdn.com/aah/paulgraham/founder-mode-1.gif
+
+R0lGODlhdgASAPMJAGYAAG4UFGYzM5kzM5lmZpmZmcyZmczMzP/MzP///wAAAAAAAAAAAAAAAAAA
+AAAAACH+HVlhaG9vIFNtYWxsIEJ1c2luZXNzIHByb2R1Y3RzACH5BAUsAQkALAAAAAB2ABIAAAT/
+MMlJq7046827/2AojmRZIUaqmix5GEeVIu1mBDgu1Lw3BLvJLWDoYW4xo3IjEARoEoKzuKQgLy+C
+ASp5WamvZCLVVVEnL3MynRJXAgTiRBAvVLJbCvtcVlsDblEBAwQDAGdXEgMDEjdBCYuNQAMCAHaS
+AosDSY6UchZEhF1EcBRxhIaIk5WXY5OLbjcwB5yfCXG1YpGuAASKjK5JcVSJf0k/FghEBACNzXRC
+triSwp/FMjk4is1opcETuzfMMeGAEwDA19SCXKO05pG7kNyjvt8S6OsXsgj9+MATvBUrdwAaQXAB
+JBFYqAqGgSYWrpQ6BOlRPgoCzSlK6GqhFmyBuga9SacREskXy04ilEToIyYgBNpJorHoCrOAACWI
+vAeJ442WfHhKgDhBmb2BKpsU0peAqLpg4y4U8AknSJw5jxIYZeq0JMgK0yQRK5lpXSd9BzIG+kbp
+wtUEaXvNFCRGFlq1R7wO3YSg4CME6GDU0feDpAqiHVXk0ioX7KMpXPn6jXb4kTjFxpLFwRHTihOY
+0dbsHAI6WrajGu1SkPeWJ4LNcLiQhmY6hz0PMk9U2V2Ut+/fwIMLH74hAgA7
+
+------MultipartBoundary--A7Rel9IMe9uAj5VESHDBkQ64DkCzhuGOmjxNCpsJWq------
